@@ -1,9 +1,6 @@
 use soroban_sdk::{Env, Bytes, BytesN, U256};  
-use ark_bn254::Fr;  
-use ark_ff::PrimeField;  
 use ark_serialize::CanonicalSerialize;  
-use crate::types::{G1Point, Proof};  
-use crate::constants::*;  
+use crate::types::G1Point;  
   
 pub struct Transcript {  
     pub env: Env,  
